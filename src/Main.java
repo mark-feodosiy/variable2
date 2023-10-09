@@ -61,15 +61,33 @@ public class Main {
         System.out.println("Вес спортивного завтрака " + weightBreakfastGram + " в граммах");
         System.out.println("Вес спортивного завтрака " + weightBreakfastKilo + " в килограммах");
         //Задача №7
-        int totalWeightGram = 7000;
+        int totalWeightKilo = 7;
         int weightProgram1 = 250;
         int weightProgram2 = 500;
+        int totalWeightGram = totalWeightKilo * grPerKg;
         int daysProgram1 = totalWeightGram / weightProgram1;
         int daysProgram2 = totalWeightGram / weightProgram2;
         int daysAverage = (daysProgram1 + daysProgram2) / 2;
         System.out.println("Количество дней на похудение, если терять в весе по 250 грамм в день - " + daysProgram1 + " дней");
         System.out.println("Количество дней на похудение, если терять в весе по 500 грамм в день - " + daysProgram2 + " дней");
         System.out.println("Количество дней на похудение в среднем - " + daysAverage + " дней");
+        //Задача №8
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        int increasePerc = 10;
+        float salaryMashaInc = (float) (salaryMasha * increasePerc) / 100;
+        float salaryDenisInc = (float) (salaryDenis * increasePerc) / 100;
+        float salaryKristinaInc = (float) (salaryKristina * increasePerc) / 100;
+        float salaryMashaAfter = salaryMasha + salaryMashaInc;
+        float salaryDenisAfter = salaryDenis + salaryDenisInc;
+        float salaryKristinaAfter = salaryKristina + salaryKristinaInc;
+        float salaryYearDiffMasha = 12 * (salaryMashaAfter - salaryMasha);
+        float salaryYearDiffDenis = 12 * (salaryDenisAfter - salaryDenis);
+        float salaryYearDiffKristina = 12 * (salaryKristinaAfter - salaryKristina);
+        System.out.println("Маша теперь получает " +  salaryMashaAfter + " рублей. Годовой доход вырос на " + salaryYearDiffMasha + " рублей");
+        System.out.println("Денис теперь получает " +  salaryDenisAfter + " рублей. Годовой доход вырос на " + salaryYearDiffDenis + " рублей");
+        System.out.println("Кристина теперь получает " +  salaryKristinaAfter + " рублей. Годовой доход вырос на " + salaryYearDiffKristina + " рублей");
 
 
     }
