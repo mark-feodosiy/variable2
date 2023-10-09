@@ -23,6 +23,13 @@ public class Main {
         short num5 = -159;
         short num6 = 27897;
         byte num7 = 67;
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
+        System.out.println(num5);
+        System.out.println(num6);
+        System.out.println(num7);
         //Задача № 3
         int lpPupil = 23;
         int asPupil = 27;
